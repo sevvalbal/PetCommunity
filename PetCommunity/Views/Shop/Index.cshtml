@@ -1,0 +1,64 @@
+﻿@model IEnumerable<PetCommunity.Models.Product>
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Shop Page";
+}
+
+<br>
+<main>
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6">
+
+            <h1 style="text-align: center;">Alışverişe Başla!</h1>
+            <hr>
+            <div class="row">
+                <div class="col-6">
+                    <p style="font-size: 10px;">(16 Ürün Görüntülenmekte)</p>
+                </div>
+                <div class="col-6">
+                    <div style="text-align: right;">
+                    </div>
+                </div>
+
+            </div>
+
+            @foreach (var item in Model)
+            {
+
+
+                <br>
+                <div class="shop">
+                    <h5 style="color: hotpink;"> @Html.DisplayFor(modelItem => item.Category) </h5>
+                    <hr>
+                    <!--
+        <div class="row">
+            <div class="col-6">
+                <img style="border: white 5px solid;" src="" alt="">
+            </div>
+            <div class="col-6">
+
+            </div>
+        </div>
+    -->
+                    <div class="row">
+                        <div class="col-12">
+                            <h5 style="color: hotpink;">   @Html.DisplayFor(modelItem => item.Name)</h5>
+                            @Html.DisplayFor(modelItem => item.Description)
+                            <br>
+                            <h5 style="color: cornflowerblue;">@Html.DisplayFor(modelItem => item.Price)TL</h5>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            }
+        </div>
+
+    </div>
+</main>

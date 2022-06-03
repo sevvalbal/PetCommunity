@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\sevva\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\sevva\\.nuget\\packages"
+    ]
+  }
+}

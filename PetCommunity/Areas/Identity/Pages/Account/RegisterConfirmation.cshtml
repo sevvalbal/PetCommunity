@@ -1,0 +1,22 @@
+﻿@page
+@model RegisterConfirmationModel
+@{
+    ViewData["Title"] = "Register confirmation";
+}
+
+<h1>Son Adım</h1>
+@{
+    if (@Model.DisplayConfirmAccountLink)
+    {
+<p>
+   
+    Giriş yapabilmek için buraya tıklayarak emailinizi onaylayabilirsiniz <a id="confirm-link" href="@Model.EmailConfirmationUrl">emailimi onayla</a>
+</p>
+    }
+    else
+    {
+<p>
+        Please check your email to confirm your account.
+</p>
+    }
+}

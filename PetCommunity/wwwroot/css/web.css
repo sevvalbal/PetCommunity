@@ -1,0 +1,93 @@
+﻿
+
+/* Menü CSS */
+.menü {
+    text-align: center;
+    font-size: 14px;
+}
+
+.menü_ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f0f0f0;
+    border-radius: 100px;
+}
+
+.menü_li {
+    display: inline-block;
+}
+
+    .menü_li a {
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+        .menü_li a:hover {
+            background-color: #0077b6;
+        }
+
+.menü_ul .menü_li .menü_ul {
+    background-color: #e6e6e6;
+    display: none;
+    position: absolute;
+    width: 100px
+}
+
+.menü_ul .menü_li:hover .menü_ul {
+    display: block;
+}
+
+.menü_li .menü_ul .menü_li {
+    display: block;
+}
+
+
+
+/* Genel CSS */
+main {
+    width: 99%;
+}
+
+header {
+    width: 99%;
+}
+
+footer {
+    background-color: #f0f0f0;
+    margin: 0.9cm;
+    padding: 1cm;
+}
+
+.col-4 {
+    padding-left: 140px;
+}
+
+/* Ana Ekran Logoları CSS */
+
+
+
+.aw-zoom:hover {
+    z-index: 2;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+#ana_sayfa_hayvan_logoları {
+    text-align: center;
+}
+
+/* Shop */
+
+.shop {
+    background-color: #f0f0f0;
+    padding: 50px;
+    margin: 5px;
+    border-radius: 30px;
+}

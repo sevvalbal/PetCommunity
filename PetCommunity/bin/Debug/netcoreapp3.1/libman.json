@@ -1,0 +1,26 @@
+{
+  "version": "1.0",
+  "defaultProvider": "unpkg",
+  "libraries": [
+    {
+      "library": "@microsoft/signalr@latest",
+      "destination": "wwwroot/lib/microsoft/signalr/",
+      "files": [
+        "dist/cjs/HubConnection.js",
+        "dist/cjs/HubConnectionBuilder.js",
+        "dist/cjs/HubConnection.js.map",
+        "dist/cjs/HubConnectionBuilder.js.map",
+        "dist/esm/HubConnection.d.ts",
+        "dist/esm/HubConnection.js",
+        "dist/esm/HubConnection.js.map",
+        "dist/esm/HubConnectionBuilder.d.ts",
+        "dist/esm/HubConnectionBuilder.js",
+        "dist/esm/HubConnectionBuilder.js.map",
+        "src/HubConnection.ts",
+        "src/HttpConnection.ts",
+        "src/HubConnectionBuilder.ts",
+        "package.json"
+      ]
+    }
+  ]
+}
